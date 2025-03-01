@@ -4,7 +4,7 @@ import { NavUser } from '@/components/nav-user';
 import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@/components/ui/sidebar';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
-import { BookOpen, Folder, LayoutGrid } from 'lucide-react';
+import { BookOpen, Folder, LayoutGrid ,ShieldCheck , Activity, Bot} from 'lucide-react';
 import AppLogo from './app-logo';
 
 const mainNavItems: NavItem[] = [
@@ -13,17 +13,34 @@ const mainNavItems: NavItem[] = [
         url: '/dashboard',
         icon: LayoutGrid,
     },
+    {
+        title: 'Plans',
+        url: '/plans',
+        icon: ShieldCheck, 
+    },
+    {
+
+        title: 'Market Pulse',
+        url: '/market-pulse',
+        icon: Activity, 
+    },
+    {
+        title: 'AI Analysis',
+        url: '/ai-analysis',
+        icon: Bot,
+    
+    },
 ];
 
 const footerNavItems: NavItem[] = [
     {
         title: 'Repository',
-        url: 'https://github.com/laravel/react-starter-kit',
+        url: '#',
         icon: Folder,
     },
     {
         title: 'Documentation',
-        url: 'https://laravel.com/docs/starter-kits',
+        url: '#',
         icon: BookOpen,
     },
 ];
