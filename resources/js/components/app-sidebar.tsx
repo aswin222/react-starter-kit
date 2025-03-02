@@ -6,6 +6,7 @@ import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
 import { BookOpen, Folder, LayoutGrid ,ShieldCheck , Activity, Bot} from 'lucide-react';
 import AppLogo from './app-logo';
+import { Tag } from "lucide-react";
 
 const mainNavItems: NavItem[] = [
     {
@@ -25,9 +26,17 @@ const mainNavItems: NavItem[] = [
         icon: Activity, 
     },
     {
-        title: 'AI Analysis',
+        title: (
+            <span className="flex items-center">
+                AI Analysis 
+                <span className="flex items-center text-blue-600 text-xs font-semibold bg-blue-100 px-2 py-0.5 rounded-md ml-3">
+                    <Tag className="h-3 w-3 mr-1" /> Beta
+                </span>
+            </span>
+        ),
+        
         url: '/ai-analysis',
-        icon: Bot,
+        icon: Bot, 
     
     },
 ];
