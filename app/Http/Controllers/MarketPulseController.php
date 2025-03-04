@@ -12,7 +12,7 @@ class MarketPulseController extends Controller
     public function index()
     {
         // Define your API key and endpoint
-        $apiKey = '64c7bf8d87a308d8ed0a0eddb8a25ae7';
+        $apiKey = '92b92288c68f23ac5a98dd37b1a6a1ea';
         $endpoint = 'https://api.marketstack.com/v2/eod/latest';
         $symbols = 'AAPL,MSFT,GOOGL,AMZN,TSLA,FB,NFLX,NVDA,AMD,INTC,IBM,ORCL,CSCO,ADBE,PYPL,BA,V,MA,DIS,JNJ,
         PFE,MRNA,BABA,TWTR,SQ,UBER,LULU,NKE,TSM,SPCE';
